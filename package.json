@@ -10,6 +10,10 @@
   },
   "scripts": {
     "start": "node index.js",
-    "prestart": "npx tsc"
+    "prestart": "npx tsc",
+    "tsc": "tsc-watch --onSuccess \"node dist/index.js\""
+  },
+  "devDependencies": {
+    "tsc-watch": "^4.2.9"
   }
 }
